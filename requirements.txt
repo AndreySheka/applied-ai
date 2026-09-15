@@ -1,0 +1,18 @@
+# Сначала установите подходящую пару PyTorch/torchvision (см. docs/SETUP.md).
+ultralytics==8.4.102
+numpy>=1.26,<3
+matplotlib>=3.8,<4
+pandas>=2.1,<4
+Pillow>=10,<13
+scipy>=1.11,<2
+seaborn>=0.13,<0.14
+tqdm>=4.66,<5
+GitPython>=3.1.30,<4
+ipywidgets>=8.1,<9
+jupyterlab==4.6.1
+jupyter-server==2.21.0
+# Используйте указанные версии компонентов Jupyter вместе.
+tornado==6.5.8
+nbformat==5.10.4
+nbclient==0.11.0
+ipykernel==6.31.0

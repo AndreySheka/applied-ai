@@ -1,0 +1,31 @@
+# Загружаемые данные и результаты вычислений
+.cache/
+**/detection_lab_data/
+**/runs/
+**/training_runs/
+**/submissions/
+**/reports/
+**/artifacts/
+*.pt
+*.onnx
+*.zip
+*.tar.gz
+
+# Локальная среда, Jupyter и редакторы
+.venv/
+.conda/
+**/.ipynb_checkpoints/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.jupyter/
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Выполненные проверочные копии остаются локально
+verification/

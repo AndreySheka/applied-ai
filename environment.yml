@@ -1,0 +1,30 @@
+# Окружение демонстрации для Linux/Windows с NVIDIA GPU.
+# Проверяемая пара PyTorch/CUDA: https://pytorch.org/get-started/previous-versions/#v251
+name: applied-ai
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu121
+      - torch==2.5.1+cu121
+      - torchvision==0.20.1+cu121
+      - ultralytics==8.4.102
+      - numpy==2.4.6
+      - pandas==3.0.3
+      - matplotlib==3.11.0
+      - Pillow==12.3.0
+      - scipy==1.17.1
+      - seaborn==0.13.2
+      - tqdm==4.70.1
+      - GitPython==3.1.62
+      - jupyterlab==4.6.1
+      - jupyter-server==2.21.0
+      # Tornado 6.5.9 несовместима с FileFindHandler в Jupyter Server 2.21.0.
+      - tornado==6.5.8
+      - ipykernel==6.31.0
+      - nbclient==0.11.0
+      - nbformat==5.10.4
+      - ipywidgets>=8.1,<9
