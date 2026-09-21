@@ -1,7 +1,18 @@
-# Прикладной искусственный интеллект · лабораторные работы
+# Прикладные и наукоемкие задачи искусственного интеллекта · лабораторные работы
 
-Практикум для 4-го курса. Сейчас доступен блок **«Детекция объектов»**.
+Практикум для 4-го курса. Доступны блоки **«Детекция объектов»** и **«Объектная сегментация»**.
 Код демонстрационного ноутбука можно использовать при выполнении работы.
+
+## Объектная сегментация
+
+Продолжение детекции: отдельные маски, разделение экземпляров и дообучение двух архитектур.
+Маршрут — [интерактивное демо](labs/02_segmentation/01_interactive_demo.ipynb), затем
+[основная работа](labs/02_segmentation/02_finetuning.ipynb) с Mask R-CNN и YOLO11n-seg.
+В демо — шесть стендов с теорией, формулами и 25 микрозаданиями.
+Три блока реализации: карта ID и отражение, IoU и matching масок, сборка из прототипов.
+Два пилота по 2 эпохи, затем две серии по 20 эпох и общий test на Penn–Fudan.
+Подробности и запуск — в [описании блока](labs/02_segmentation/README.md),
+требования — в [критериях оценивания](labs/02_segmentation/ASSESSMENT.md).
 
 ## Детекция: понять механику и обучить модель для нового домена
 
@@ -52,8 +63,10 @@
 
 **Google Colab.** Откройте нужный ноутбук:
 
-- [01 · Интерактивное демо в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/01_detection/01_interactive_demo.ipynb)
-- [02 · Дообучение в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/01_detection/02_finetuning.ipynb)
+- [Детекция · Интерактивное демо в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/01_detection/01_interactive_demo.ipynb)
+- [Детекция · Дообучение в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/01_detection/02_finetuning.ipynb)
+- [Сегментация · Интерактивное демо в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/02_segmentation/01_interactive_demo.ipynb)
+- [Сегментация · Дообучение в Colab](https://colab.research.google.com/github/AndreySheka/applied-ai/blob/main/labs/02_segmentation/02_finetuning.ipynb)
 
 Чтобы сохранить свои изменения, выберите **Файл → Сохранить копию на Диске**.
 Первая ячейка устанавливает зависимости; ноутбуки самодостаточны и не требуют
@@ -72,13 +85,15 @@ conda run -n applied-ai python -m ipykernel install --user --name applied-ai --d
 ```
 
 Если окружение `applied-ai` уже подготовлено, достаточно `./start_demo.sh`.
+Скрипт открывает демо детекции. Для сегментации выберите в файловой панели JupyterLab
+`labs → 02_segmentation → 01_interactive_demo.ipynb`, затем ядро **Python (applied-ai)**.
 Для CPU, Windows и других вариантов см. [настройку среды](docs/SETUP.md).
 
 Запускайте ячейки сверху вниз. Для ползунков нужен подключённый Python kernel:
 просмотр файла на GitHub сам по себе код не выполняет. Стенды также доступны
 обычным вызовом функции с параметрами.
 
-## Что сдавать
+## Детекция: что сдавать
 
 Выполненный `02_finetuning.ipynb` с реализациями трёх блоков, пройденными проверками
 и объяснением собственных контрольных примеров, таблицу сравнения всех четырёх моделей, кривые обучения,
@@ -87,7 +102,7 @@ conda run -n applied-ai python -m ipykernel install --user --name applied-ai --d
 решения сохранить или изменить настройку.
 Подробные требования — в [критериях оценивания](docs/ASSESSMENT.md).
 
-## Данные и вычисления
+## Детекция: данные и вычисления
 
 В демо используется Penn–Fudan с пешеходами. Для дообучения выбран другой домен —
 BCCD, изображения клеток крови с классами `RBC`, `WBC`, `Platelets`, которых нет

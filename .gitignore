@@ -1,12 +1,14 @@
 # Загружаемые данные и результаты вычислений
 .cache/
 **/detection_lab_data/
+**/segmentation_lab_data/
 **/runs/
 **/training_runs/
 **/submissions/
 **/reports/
 **/artifacts/
 *.pt
+*.pth
 *.onnx
 *.zip
 *.tar.gz
