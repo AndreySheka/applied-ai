@@ -1,0 +1,58 @@
+[
+  {
+    "id": "astronaut",
+    "filename": "astronaut.png",
+    "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/astronaut.png",
+    "credit": "NASA, public domain"
+  },
+  {
+    "id": "camera",
+    "filename": "camera.png",
+    "sha256": "b0793d2adda0fa6ae899c03989482bff9a42d3d5690fc7e3648f2795d730c23a",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/camera.png",
+    "credit": "Lav Varshney, CC0"
+  },
+  {
+    "id": "coffee",
+    "filename": "coffee.png",
+    "sha256": "cc02f8ca188b167c775a7101b5d767d1e71792cf762c33d6fa15a4599b5a8de7",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/coffee.png",
+    "credit": "Rachel Michetti, CC0"
+  },
+  {
+    "id": "chelsea",
+    "filename": "chelsea.png",
+    "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+    "credit": "Stefan van der Walt, CC0"
+  },
+  {
+    "id": "rocket",
+    "filename": "rocket.jpg",
+    "sha256": "c2dd0de7c538df8d111e479619b129464d0269d0ae5fd18ca91d33a7fdfea95c",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/rocket.jpg",
+    "credit": "SpaceX, public domain"
+  },
+  {
+    "id": "coins",
+    "filename": "coins.png",
+    "sha256": "f8d773fc9cfa6f4d8e5942dc34d0a0788fcaed2a4fefbbed0aef5398d7ef4cba",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/coins.png",
+    "credit": "Brooklyn Museum, no known copyright restrictions"
+  },
+  {
+    "id": "horse",
+    "filename": "horse.png",
+    "sha256": "c7fb60789fe394c485f842291ea3b21e50d140f39d6dcb5fb9917cc178225455",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/horse.png",
+    "credit": "Andreas Preuss, CC0; illustration"
+  },
+  {
+    "id": "hubble_deep_field",
+    "filename": "hubble_deep_field.jpg",
+    "sha256": "3a19c5dd8a927a9334bb1229a6d63711b1c0c767fb27e2286e7c84a3e2c2f5f4",
+    "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/hubble_deep_field.jpg",
+    "credit": "NASA, public domain"
+  }
+]

@@ -1,0 +1,12 @@
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.cache/
+cache/
+results/
+outputs/
+*.safetensors
+*.pt
+*.pth
+*.bin
+*.zip
