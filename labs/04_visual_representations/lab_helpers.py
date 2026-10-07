@@ -19,11 +19,17 @@ def select_device():
         raise ValueError("VISUAL_LAB_DEVICE must be 'auto', 'cuda', or 'cpu'")
     if requested=='cuda' and not torch.cuda.is_available():
         raise RuntimeError("CUDA is unavailable to PyTorch; check the driver and CUDA-enabled PyTorch installation")
-    device='cuda' if requested=='cuda' or (requested=='auto' and torch.cuda.is_available()) else 'cpu'
+    cuda_ready=torch.cuda.is_available()
+    if requested=='auto' and cuda_ready:
+        free_bytes,total_bytes=torch.cuda.mem_get_info()
+        if free_bytes < 4*2**30:
+            print(f'GPU виден, но свободно только {free_bytes/2**30:.1f} из {total_bytes/2**30:.1f} GiB. Автоматически выбираю CPU; для ускорения освободите видеопамять и перезапустите ядро.')
+            cuda_ready=False
+    device='cuda' if requested=='cuda' or (requested=='auto' and cuda_ready) else 'cpu'
     if device=='cuda':
         print('Устройство для CLIP, Grounding DINO и SAM: CUDA — '+torch.cuda.get_device_name(0))
     else:
-        print('Устройство для CLIP, Grounding DINO и SAM: CPU. Для GPU проверьте torch.cuda.is_available().')
+        print('Устройство для CLIP, Grounding DINO и SAM: CPU (ручной выбор или CUDA недоступна/занята).')
     return device
 
 DEVICE = select_device()
