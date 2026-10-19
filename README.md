@@ -4,6 +4,8 @@
 
 Практикум к лекции 6: [идентификация и реидентификация](labs/05_identification_reid/README.md), [критерии](labs/05_identification_reid/ASSESSMENT.md).
 
+Практикум к лекции 7: [трекинг I — движение и назначение](labs/06_tracking_basics/README.md), [критерии](labs/06_tracking_basics/ASSESSMENT.md).
+
 Код демонстрационного ноутбука можно использовать при выполнении работы.
 
 ## Визуальные представления и поиск по тексту
