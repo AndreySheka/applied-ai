@@ -6,6 +6,8 @@
 
 Практикум к лекции 7: [трекинг I — движение и назначение](labs/06_tracking_basics/README.md), [критерии](labs/06_tracking_basics/ASSESSMENT.md).
 
+Практикум к лекции 8: [трекинг II — механизмы и метрики](labs/07_tracking_metrics/README.md), [критерии](labs/07_tracking_metrics/ASSESSMENT.md).
+
 Код демонстрационного ноутбука можно использовать при выполнении работы.
 
 ## Визуальные представления и поиск по тексту
